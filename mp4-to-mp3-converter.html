@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP4 to MP3 Converter – Free In-Browser Video to Audio Extraction</title>
+    
+    <meta name="description" content="Convert MP4, WEBM, MKV, and MOV videos to MP3 audio online for free. 100% private client-side conversion in your browser without uploading files to any remote server.">
+    <meta name="keywords" content="mp4 to mp3, convert video to audio, extract mp3 from video, in browser video converter, free mp3 converter">
+    <link rel="canonical" href="https://appvideodownloader.github.io/mp4-to-mp3-converter.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <div class="bg-ambient">
+        <div class="ambient-orb-1"></div>
+        <div class="ambient-orb-2"></div>
+    </div>
+
+    
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="./" class="brand-logo">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-text-title">AppVideo<span>Downloader</span></span>
+                    <span class="logo-text-sub">Free Online HD Video & Audio Tools</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="./" class="nav-link "><i class="fa-solid fa-house"></i> Home</a>
+                <a href="./youtube-video-downloader.html" class="nav-link "><i class="fa-brands fa-youtube" style="color:#ef4444;"></i> YouTube</a>
+                <a href="./instagram-reels-downloader.html" class="nav-link "><i class="fa-brands fa-instagram" style="color:#ec4899;"></i> Instagram</a>
+                <a href="./facebook-video-downloader.html" class="nav-link "><i class="fa-brands fa-facebook" style="color:#3b82f6;"></i> Facebook</a>
+                <a href="./threads-video-downloader.html" class="nav-link "><i class="fa-brands fa-threads" style="color:#10b981;"></i> Threads</a>
+                <a href="./mp4-to-mp3-converter.html" class="nav-link active"><i class="fa-solid fa-music" style="color:#06b6d4;"></i> MP4 to MP3</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="./mp4-to-mp3-converter.html" class="btn-cta-nav">
+                    <i class="fa-solid fa-bolt"></i> Converter Studio
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Banner Top 728 -->
+    <div class="banner-728-wrapper">
+        <script>
+            atOptions = {
+                'key': '72aae8a75da17a34e48ed84feaa311bf',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script src="https://motionlesspatronage.com/72aae8a75da17a34e48ed84feaa311bf/invoke.js"></script>
+    </div>
+
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-badge-pill" style="background:rgba(6, 182, 212, 0.15); color:#06b6d4; border-color:rgba(6, 182, 212, 0.3);">
+                    <i class="fa-solid fa-music"></i> 100% CLIENT-SIDE • ZERO SERVER UPLOAD • PRIVATE & SECURE
+                </div>
+
+                <h1 class="hero-title">
+                    Convert MP4 to MP3 <br>
+                    <span style="background: linear-gradient(90deg, #06b6d4, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">In-Browser Audio Studio</span>
+                </h1>
+
+                <p class="hero-lead">
+                    Extract crystal-clear audio from any video file in seconds. Runs completely in your browser memory without uploading your confidential files to any remote server.
+                </p>
+
+                <!-- MP3 Converter Glass Card -->
+                <div class="mp3-studio-card">
+                    <div class="dropzone-converter" id="mp4-dropzone">
+                        <input type="file" id="mp4-file-input" accept="video/*" aria-label="Upload Video File">
+                        <div class="dropzone-icon">
+                            <i class="fa-solid fa-file-audio"></i>
+                        </div>
+                        <h3 style="font-family:var(--font-heading); font-size:1.25rem; margin-bottom:6px;">Select or Drop Video File Here</h3>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">Supports MP4, WEBM, MKV, MOV, and AVI (Up to 500MB+)</p>
+                    </div>
+
+                    <!-- Selected File Info -->
+                    <div id="selected-file-card" class="hidden" style="margin-top:20px; padding:16px; background:rgba(255, 255, 255, 0.04); border-radius:var(--radius-md); display:flex; justify-content:space-between; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:12px;">
+                            <i class="fa-solid fa-film" style="font-size:1.4rem; color:#06b6d4;"></i>
+                            <div style="text-align:left;">
+                                <div id="selected-file-name" style="font-weight:700; font-size:0.95rem;">video.mp4</div>
+                                <div id="selected-file-size" style="font-size:0.8rem; color:var(--text-muted);">0 MB</div>
+                            </div>
+                        </div>
+                        <span style="font-size:0.8rem; padding:4px 10px; background:rgba(6, 182, 212, 0.15); color:#06b6d4; border-radius:var(--radius-sm); font-weight:600;">Ready</span>
+                    </div>
+
+                    <div class="converter-settings-grid">
+                        <div class="setting-item">
+                            <label><i class="fa-solid fa-sliders"></i> Audio Bitrate Quality:</label>
+                            <select class="setting-select" id="audio-bitrate-select">
+                                <option value="320">320 kbps (High Fidelity Studio)</option>
+                                <option value="256">256 kbps (Premium Audio)</option>
+                                <option value="192" selected>192 kbps (Standard High Quality)</option>
+                                <option value="128">128 kbps (Compact File Size)</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <label><i class="fa-solid fa-wave-square"></i> Audio Channels:</label>
+                            <select class="setting-select">
+                                <option value="2">Stereo (2 Channels)</option>
+                                <option value="1">Mono (Voice & Speech)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-download-action" id="btn-convert-mp3" style="width:100%; justify-content:center; background:linear-gradient(90deg, #06b6d4, #3b82f6); box-shadow:0 4px 20px rgba(6, 182, 212, 0.35);">
+                        <i class="fa-solid fa-bolt"></i> <span>Convert to MP3 Now</span>
+                    </button>
+
+                    <div class="progress-converter-bar" id="converter-progress-bar">
+                        <div class="progress-converter-fill" id="converter-progress-fill"></div>
+                    </div>
+
+                    <!-- Converted Result Card -->
+                    <div id="mp3-result-box" class="hidden" style="margin-top:24px; padding:20px; background:rgba(6, 182, 212, 0.08); border:1px solid rgba(6, 182, 212, 0.25); border-radius:var(--radius-md); text-align:left;">
+                        <h4 style="font-family:var(--font-heading); margin-bottom:10px; color:#06b6d4;"><i class="fa-solid fa-circle-check"></i> Audio Converted Successfully!</h4>
+                        <audio id="converted-audio-player" controls style="width:100%; margin-bottom:14px; outline:none;"></audio>
+                        <a href="#" id="btn-download-converted-mp3" class="btn-download-action" style="text-decoration:none; display:inline-flex; width:100%; justify-content:center; background:linear-gradient(90deg, #10b981, #06b6d4);" download="audio.mp3">
+                            <i class="fa-solid fa-download"></i> Download Completed MP3 File
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- Ads Duo Row 300x250 -->
+    <div class="ads-duo-row">
+        <!-- Iklan 300x250 Kiri -->
+        <div class="ad-container-300">
+            <script>
+                atOptions = {
+                    'key': '5c2ef2cb97dff829617ea4c4e1d5ca7b',
+                    'format': 'iframe',
+                    'height': 250,
+                    'width': 300,
+                    'params': {}
+                };
+            </script>
+            <script src="https://motionlesspatronage.com/5c2ef2cb97dff829617ea4c4e1d5ca7b/invoke.js"></script>
+        </div>
+        <!-- Iklan 300x250 Kanan -->
+        <div class="ad-container-300">
+            <script>
+                atOptions = {
+                    'key': 'ef5cdc72a62a03d1d689161ba6bc82f6',
+                    'format': 'iframe',
+                    'height': 250,
+                    'width': 300,
+                    'params': {}
+                };
+            </script>
+            <script src="https://grop.net/22/ef5cdc72a62a03d1d689161ba6bc82f6"></script>
+        </div>
+    </div>
+
+
+        <!-- Benefits Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">ADVANTAGES</span>
+                    <h2 class="section-title">Why Convert Locally in Your Browser?</h2>
+                    <p class="section-subtitle">Experience the next generation of client-side audio processing.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-box mp3"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="feature-title">100% Data Privacy</h3>
+                        <p class="feature-desc">Your private videos, lectures, and recordings are decoded right inside your device memory. Zero bytes are uploaded to remote servers.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box mp3"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="feature-title">Instant Conversion</h3>
+                        <p class="feature-desc">No waiting for slow upload queues or server rendering. Conversion utilizes your computer's native multi-core processor.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box mp3"><i class="fa-solid fa-infinity"></i></div>
+                        <h3 class="feature-title">No File Size Limits</h3>
+                        <p class="feature-desc">Convert full movies, 2-hour podcast recordings, or music videos without artificial 10MB or 50MB file size limits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- Banner Bottom 728 -->
+    <div class="banner-728-wrapper">
+        <script>
+            atOptions = {
+                'key': '4b03159602cba0243869c415124b923e',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script src="https://motionlesspatronage.com/4b03159602cba0243869c415124b923e/invoke.js"></script>
+    </div>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./" class="brand-logo" style="margin-bottom:12px;">
+                        <div class="logo-badge" style="width:36px; height:36px; font-size:1.1rem;">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        </div>
+                        <span class="logo-text-title" style="font-size:1.2rem;">AppVideo<span>Downloader</span></span>
+                    </a>
+                    <p>Free online video downloader for YouTube, Instagram Reels, Facebook, Threads, and high-speed in-browser MP4 to MP3 converter.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Video Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="./youtube-video-downloader.html">YouTube Downloader</a></li>
+                        <li><a href="./youtube-shorts-downloader.html">YouTube Shorts Saver</a></li>
+                        <li><a href="./instagram-reels-downloader.html">Instagram Reels Downloader</a></li>
+                        <li><a href="./instagram-story-downloader.html">Instagram Story Downloader</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social & Audio</h4>
+                    <ul class="footer-links">
+                        <li><a href="./facebook-video-downloader.html">Facebook Video Downloader</a></li>
+                        <li><a href="./facebook-reels-downloader.html">Facebook Reels Downloader</a></li>
+                        <li><a href="./threads-video-downloader.html">Threads Video Downloader</a></li>
+                        <li><a href="./mp4-to-mp3-converter.html">MP4 to MP3 Audio Studio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Tutorials & Guides</h4>
+                    <ul class="footer-links">
+                        <li><a href="./how-to-download-youtube-videos.html">How to Save YouTube Videos</a></li>
+                        <li><a href="./how-to-download-instagram-reels.html">How to Save Instagram Reels</a></li>
+                        <li><a href="./how-to-download-facebook-videos.html">How to Save Facebook Videos</a></li>
+                        <li><a href="./how-to-download-threads-videos.html">How to Save Threads Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AppVideoDownloader. All rights reserved. Free for everyone worldwide.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Social Bar -->
+    <script data-cfasync="false" src="https://grop.net/14/eeb4cf0865d0471035c3185feaa05874"></script>
+
+    <!-- Histats.com START (aync) -->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5057968,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?5057968&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com END -->
+
+
+    <script src="app.js"></script>
+</body>
+</html>

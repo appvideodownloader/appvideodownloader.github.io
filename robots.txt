@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appvideodownloader.github.io/sitemap.xml

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppVideoDownloader – Free Online Video Downloader (YouTube, Instagram, Facebook, Threads, MP4 to MP3)</title>
+    
+    <meta name="description" content="Download videos from YouTube (MP4 & Shorts), Instagram (Reels & Stories), Facebook (HD Video & Reels), and Threads online for free without watermark. Includes in-browser MP4 to MP3 converter.">
+    <meta name="keywords" content="video downloader, youtube downloader, instagram reels downloader, facebook video downloader, threads downloader, mp4 to mp3 converter, download youtube shorts">
+    <link rel="canonical" href="https://appvideodownloader.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AppVideoDownloader – Free Online Video Downloader & MP3 Converter">
+    <meta property="og:description" content="Download YouTube, Instagram Reels, Facebook, and Threads videos in Full HD without watermark. Convert MP4 to MP3 directly in your browser.">
+    <meta property="og:url" content="https://appvideodownloader.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "AppVideoDownloader",
+      "url": "https://appvideodownloader.github.io/",
+      "description": "Universal online video downloader supporting YouTube, Instagram, Facebook, Threads, and in-browser MP4 to MP3 conversion.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body data-theme="dark">
+    <div class="bg-ambient">
+        <div class="ambient-orb-1"></div>
+        <div class="ambient-orb-2"></div>
+    </div>
+
+    
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="./" class="brand-logo">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-text-title">AppVideo<span>Downloader</span></span>
+                    <span class="logo-text-sub">Free Online HD Video & Audio Tools</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="./" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="./youtube-video-downloader.html" class="nav-link "><i class="fa-brands fa-youtube" style="color:#ef4444;"></i> YouTube</a>
+                <a href="./instagram-reels-downloader.html" class="nav-link "><i class="fa-brands fa-instagram" style="color:#ec4899;"></i> Instagram</a>
+                <a href="./facebook-video-downloader.html" class="nav-link "><i class="fa-brands fa-facebook" style="color:#3b82f6;"></i> Facebook</a>
+                <a href="./threads-video-downloader.html" class="nav-link "><i class="fa-brands fa-threads" style="color:#10b981;"></i> Threads</a>
+                <a href="./mp4-to-mp3-converter.html" class="nav-link "><i class="fa-solid fa-music" style="color:#06b6d4;"></i> MP4 to MP3</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <a href="./mp4-to-mp3-converter.html" class="btn-cta-nav">
+                    <i class="fa-solid fa-bolt"></i> Converter Studio
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Banner Top 728 -->
+    <div class="banner-728-wrapper">
+        <script>
+            atOptions = {
+                'key': '72aae8a75da17a34e48ed84feaa311bf',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script src="https://motionlesspatronage.com/72aae8a75da17a34e48ed84feaa311bf/invoke.js"></script>
+    </div>
+
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-badge-pill">
+                    <i class="fa-solid fa-sparkles"></i> 100% FREE • NO WATERMARK • ULTRA FAST HD
+                </div>
+
+                <h1 class="hero-title">
+                    Online Video Downloader <br>
+                    <span class="gradient-text">& In-Browser MP4 to MP3 Studio</span>
+                </h1>
+
+                <p class="hero-lead">
+                    Paste any link from YouTube, Instagram, Facebook, or Threads to download Full HD MP4 videos and high-quality MP3 audio in seconds.
+                </p>
+
+                <!-- Platform Quick Selector -->
+                <div class="platform-quick-bar">
+                    <a href="./" class="platform-pill-btn active"><i class="fa-solid fa-globe"></i> All In One</a>
+                    <a href="./youtube-video-downloader.html" class="platform-pill-btn pill-yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                    <a href="./instagram-reels-downloader.html" class="platform-pill-btn pill-ig"><i class="fa-brands fa-instagram"></i> Instagram Reels</a>
+                    <a href="./facebook-video-downloader.html" class="platform-pill-btn pill-fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="./threads-video-downloader.html" class="platform-pill-btn pill-th"><i class="fa-brands fa-threads"></i> Threads</a>
+                    <a href="./mp4-to-mp3-converter.html" class="platform-pill-btn pill-mp3"><i class="fa-solid fa-music"></i> MP4 to MP3</a>
+                </div>
+
+                <!-- Main Glassmorphic Downloader Box -->
+                <div class="downloader-box-card">
+                    <div class="downloader-input-wrap">
+                        <i class="fa-solid fa-link input-platform-icon" id="input-platform-icon"></i>
+                        <input type="text" id="video-url-input" class="url-input-field" placeholder="Paste video link here (YouTube, Reels, Facebook, Threads)..." autocomplete="off" spellcheck="false">
+                        
+                        <div class="input-addon-btns">
+                            <button type="button" class="btn-paste-clipboard" id="btn-paste-clipboard" title="Paste from clipboard">
+                                <i class="fa-regular fa-clipboard"></i> <span>Paste</span>
+                            </button>
+                            <button type="button" class="btn-clear-input" id="btn-clear-input" title="Clear input">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <button type="button" class="btn-download-action" id="btn-start-download">
+                            <i class="fa-solid fa-bolt"></i> <span>Download</span>
+                        </button>
+                    </div>
+
+                    <div class="supported-bar">
+                        <span>Auto-detects platform automatically:</span>
+                        <div class="platform-icons-row">
+                            <span class="platform-icon-item yt"><i class="fa-brands fa-youtube"></i> YouTube</span>
+                            <span class="platform-icon-item ig"><i class="fa-brands fa-instagram"></i> Instagram</span>
+                            <span class="platform-icon-item fb"><i class="fa-brands fa-facebook"></i> Facebook</span>
+                            <span class="platform-icon-item th"><i class="fa-brands fa-threads"></i> Threads</span>
+                        </div>
+                    </div>
+
+                    <!-- Extraction Progress Box -->
+                    <div class="extraction-state-box" id="extraction-state">
+                        <div class="spinner-pulse"></div>
+                        <h4 style="font-family:var(--font-heading); margin-bottom:6px;">Extracting Video & Formats...</h4>
+                        <p style="color:var(--text-secondary); font-size:0.88rem;">Connecting to high-speed stream servers...</p>
+                    </div>
+
+                    <!-- Extraction Result Card -->
+                    <div class="video-result-card" id="video-result-card">
+                        <div class="result-header-row">
+                            <div class="video-thumb-container">
+                                <img src="" alt="Thumbnail" class="video-thumb-img" id="res-video-thumb">
+                                <span class="video-platform-badge" id="res-platform-badge"><i class="fa-brands fa-youtube"></i> YouTube</span>
+                                <span class="video-duration-badge" id="res-video-duration">03:20</span>
+                            </div>
+                            <div class="video-meta-details">
+                                <h3 class="video-result-title" id="res-video-title">Video Title</h3>
+                                <div class="video-result-author" id="res-video-author"><i class="fa-solid fa-circle-check" style="color:#10b981;"></i> High Definition Stream Ready</div>
+                            </div>
+                        </div>
+
+                        <div class="formats-table-title">
+                            <span><i class="fa-solid fa-layer-group"></i> Available Quality Formats:</span>
+                            <span style="font-size:0.8rem; color:var(--text-muted); font-weight:normal;">Direct High-Speed Download</span>
+                        </div>
+
+                        <table class="formats-table">
+                            <thead>
+                                <tr>
+                                    <th>Resolution</th>
+                                    <th>Format</th>
+                                    <th>File Size</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="formats-tbody">
+                                <!-- Populated dynamically by app.js -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- Ads Duo Row 300x250 -->
+    <div class="ads-duo-row">
+        <!-- Iklan 300x250 Kiri -->
+        <div class="ad-container-300">
+            <script>
+                atOptions = {
+                    'key': '5c2ef2cb97dff829617ea4c4e1d5ca7b',
+                    'format': 'iframe',
+                    'height': 250,
+                    'width': 300,
+                    'params': {}
+                };
+            </script>
+            <script src="https://motionlesspatronage.com/5c2ef2cb97dff829617ea4c4e1d5ca7b/invoke.js"></script>
+        </div>
+        <!-- Iklan 300x250 Kanan -->
+        <div class="ad-container-300">
+            <script>
+                atOptions = {
+                    'key': 'ef5cdc72a62a03d1d689161ba6bc82f6',
+                    'format': 'iframe',
+                    'height': 250,
+                    'width': 300,
+                    'params': {}
+                };
+            </script>
+            <script src="https://grop.net/22/ef5cdc72a62a03d1d689161ba6bc82f6"></script>
+        </div>
+    </div>
+
+
+        <!-- 3-Step Process -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">QUICK & EASY</span>
+                    <h2 class="section-title">How to Download Videos in 3 Steps</h2>
+                    <p class="section-subtitle">No software or plugins required. Works directly on Mobile, Tablet, Mac, and Windows.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-badge">01</span>
+                        <div class="step-icon-box"><i class="fa-solid fa-copy"></i></div>
+                        <h3 class="step-title">Copy Video Link</h3>
+                        <p class="step-desc">Open YouTube, Instagram, Facebook, or Threads and copy the URL link of the video or Reel you wish to save.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">02</span>
+                        <div class="step-icon-box"><i class="fa-solid fa-paste"></i></div>
+                        <h3 class="step-title">Paste & Choose Quality</h3>
+                        <p class="step-desc">Paste the link into the search box above. Our smart engine auto-detects the platform and retrieves available resolutions.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <span class="step-badge">03</span>
+                        <div class="step-icon-box"><i class="fa-solid fa-circle-down"></i></div>
+                        <h3 class="step-title">Save to Device</h3>
+                        <p class="step-desc">Select your desired resolution (1080p, 720p HD, or MP3 audio) and click download to save the file instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Specific Tool Cards Hub -->
+        <section class="section" style="background: rgba(15, 21, 35, 0.3);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">ALL SUPPORTED PLATFORMS</span>
+                    <h2 class="section-title">Explore Dedicated Downloader Tools</h2>
+                    <p class="section-subtitle">Optimized standalone tools tailored for each social media video platform.</p>
+                </div>
+
+                <div class="tools-nav-grid">
+                    <a href="./youtube-video-downloader.html" class="tool-nav-card">
+                        <i class="fa-brands fa-youtube tool-nav-icon" style="color:#ef4444;"></i>
+                        <div class="tool-nav-info">
+                            <h4>YouTube Downloader</h4>
+                            <span>Download 1080p & 4K MP4</span>
+                        </div>
+                    </a>
+
+                    <a href="./youtube-shorts-downloader.html" class="tool-nav-card">
+                        <i class="fa-solid fa-bolt tool-nav-icon" style="color:#ef4444;"></i>
+                        <div class="tool-nav-info">
+                            <h4>YouTube Shorts Saver</h4>
+                            <span>Fast Vertical Video MP4</span>
+                        </div>
+                    </a>
+
+                    <a href="./instagram-reels-downloader.html" class="tool-nav-card">
+                        <i class="fa-brands fa-instagram tool-nav-icon" style="color:#ec4899;"></i>
+                        <div class="tool-nav-info">
+                            <h4>Instagram Reels</h4>
+                            <span>No Watermark HD Reels</span>
+                        </div>
+                    </a>
+
+                    <a href="./instagram-story-downloader.html" class="tool-nav-card">
+                        <i class="fa-solid fa-circle-notch tool-nav-icon" style="color:#ec4899;"></i>
+                        <div class="tool-nav-info">
+                            <h4>Instagram Stories</h4>
+                            <span>Save Stories & Highlights</span>
+                        </div>
+                    </a>
+
+                    <a href="./facebook-video-downloader.html" class="tool-nav-card">
+                        <i class="fa-brands fa-facebook tool-nav-icon" style="color:#3b82f6;"></i>
+                        <div class="tool-nav-info">
+                            <h4>Facebook Video Saver</h4>
+                            <span>HD & SD Watch Streams</span>
+                        </div>
+                    </a>
+
+                    <a href="./facebook-reels-downloader.html" class="tool-nav-card">
+                        <i class="fa-solid fa-clapperboard tool-nav-icon" style="color:#3b82f6;"></i>
+                        <div class="tool-nav-info">
+                            <h4>Facebook Reels</h4>
+                            <span>Save FB Reels in 1080p</span>
+                        </div>
+                    </a>
+
+                    <a href="./threads-video-downloader.html" class="tool-nav-card">
+                        <i class="fa-brands fa-threads tool-nav-icon" style="color:#10b981;"></i>
+                        <div class="tool-nav-info">
+                            <h4>Threads Downloader</h4>
+                            <span>Download Threads Videos</span>
+                        </div>
+                    </a>
+
+                    <a href="./mp4-to-mp3-converter.html" class="tool-nav-card">
+                        <i class="fa-solid fa-music tool-nav-icon" style="color:#06b6d4;"></i>
+                        <div class="tool-nav-info">
+                            <h4>MP4 to MP3 Converter</h4>
+                            <span>In-Browser Audio Extraction</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- In-Depth SEO Guide & Article -->
+        <section class="container">
+            <div class="article-section">
+                <article class="article-content">
+                    <h2>The Most Reliable Online Video Downloader Platform</h2>
+                    <p>AppVideoDownloader is designed for digital creators, researchers, and everyday social media users who need quick, secure, and watermark-free video downloads. Traditional downloaders are often cluttered with invasive popups or require installing risky desktop software. AppVideoDownloader runs 100% online directly in your browser.</p>
+                    
+                    <h2>Key Advantages of Using AppVideoDownloader</h2>
+                    <ul>
+                        <li><strong>Universal Compatibility:</strong> Works seamlessly across YouTube, Instagram Reels, Facebook, and Threads with smart URL auto-detection.</li>
+                        <li><strong>Zero Watermark:</strong> Videos downloaded through our service preserve their original crystal-clear resolution without added logos or compression degradation.</li>
+                        <li><strong>High Definition Support:</strong> Download in Full HD (1080p), 720p, 480p, or extract raw MP3 audio at 320kbps.</li>
+                        <li><strong>100% Client Privacy:</strong> No login or personal registration required. We do not track or save your download history.</li>
+                    </ul>
+
+                    <h2>Built-In Local MP4 to MP3 Converter Studio</h2>
+                    <p>Need to extract background music, interviews, or podcasts from a video file? Use our dedicated <a href="./mp4-to-mp3-converter.html" style="color:#06b6d4; font-weight:600;">MP4 to MP3 Converter</a>. It uses the Web Audio API to decode video audio streams locally in your device's memory, ensuring maximum conversion speed and zero cloud upload requirements.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about downloading videos online.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            <span>Is AppVideoDownloader completely free to use?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            Yes! Our video downloader and MP4 to MP3 converter are 100% free with no hidden charges, daily quotas, or subscription requirements.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do downloaded videos have watermarks?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            No. All videos downloaded from YouTube, Instagram Reels, Facebook, and Threads are saved in their original quality without any added watermarks.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I download videos on Android and iPhone?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            Yes. AppVideoDownloader is fully responsive and functions smoothly in mobile browsers such as Safari on iPhone/iPad and Chrome on Android.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How does the MP4 to MP3 converter work?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            The converter operates directly inside your web browser using HTML5 Web Audio decoding. Your video file is never uploaded to external servers, providing instantaneous conversion and absolute privacy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- Banner Bottom 728 -->
+    <div class="banner-728-wrapper">
+        <script>
+            atOptions = {
+                'key': '4b03159602cba0243869c415124b923e',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script src="https://motionlesspatronage.com/4b03159602cba0243869c415124b923e/invoke.js"></script>
+    </div>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./" class="brand-logo" style="margin-bottom:12px;">
+                        <div class="logo-badge" style="width:36px; height:36px; font-size:1.1rem;">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        </div>
+                        <span class="logo-text-title" style="font-size:1.2rem;">AppVideo<span>Downloader</span></span>
+                    </a>
+                    <p>Free online video downloader for YouTube, Instagram Reels, Facebook, Threads, and high-speed in-browser MP4 to MP3 converter.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Video Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="./youtube-video-downloader.html">YouTube Downloader</a></li>
+                        <li><a href="./youtube-shorts-downloader.html">YouTube Shorts Saver</a></li>
+                        <li><a href="./instagram-reels-downloader.html">Instagram Reels Downloader</a></li>
+                        <li><a href="./instagram-story-downloader.html">Instagram Story Downloader</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social & Audio</h4>
+                    <ul class="footer-links">
+                        <li><a href="./facebook-video-downloader.html">Facebook Video Downloader</a></li>
+                        <li><a href="./facebook-reels-downloader.html">Facebook Reels Downloader</a></li>
+                        <li><a href="./threads-video-downloader.html">Threads Video Downloader</a></li>
+                        <li><a href="./mp4-to-mp3-converter.html">MP4 to MP3 Audio Studio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Tutorials & Guides</h4>
+                    <ul class="footer-links">
+                        <li><a href="./how-to-download-youtube-videos.html">How to Save YouTube Videos</a></li>
+                        <li><a href="./how-to-download-instagram-reels.html">How to Save Instagram Reels</a></li>
+                        <li><a href="./how-to-download-facebook-videos.html">How to Save Facebook Videos</a></li>
+                        <li><a href="./how-to-download-threads-videos.html">How to Save Threads Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AppVideoDownloader. All rights reserved. Free for everyone worldwide.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Social Bar -->
+    <script data-cfasync="false" src="https://grop.net/14/eeb4cf0865d0471035c3185feaa05874"></script>
+
+    <!-- Histats.com START (aync) -->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5057968,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?5057968&101" alt="" border="0"></a></noscript>
+    <!-- Histats.com END -->
+
+
+    <script src="app.js"></script>
+</body>
+</html>
